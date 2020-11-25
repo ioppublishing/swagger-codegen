@@ -11,11 +11,33 @@
     <name>swagger-codegen-project</name>
     <version>3.0.25-SNAPSHOT</version>
     <url>https://github.com/swagger-api/swagger-codegen</url>
+
+    <!-- IOP Publishing custom build repository of the Swagger codegen generators -->
     <scm>
-        <connection>scm:git:git@github.com:swagger-api/swagger-codegen.git</connection>
-        <developerConnection>scm:git:git@github.com:swagger-api/swagger-codegen.git</developerConnection>
-        <url>https://github.com/swagger-api/swagger-codegen</url>
+        <connection>git@github.com:ioppublishing/swagger-codegen.git</connection>
+        <developerConnection>git@github.com:ioppublishing/swagger-codegen.git</developerConnection>
+        <url>https://github.com/ioppublishing/swagger-codegen</url>
+        <tag>HEAD</tag>
     </scm>
+
+    <!-- IOP Publishing Nexus repository where to store internal binaries and documentation -->
+    <distributionManagement>
+        <repository>
+            <id>internal.release</id>
+            <name>Internal Releases</name>
+            <url>http://kundt.ioppublishing.com:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>internal.snapshots</id>
+            <name>Internal Snapshots</name>
+            <url>http://kundt.ioppublishing.com:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <site>
+            <id>nexus</id>
+            <url>dav:http://kundt.ioppublishing.com:8081/nexus/content/sites/Javadoc/${project.artifactId}</url>
+        </site>
+    </distributionManagement>
+
     <developers>
         <developer>
             <id>fehguy</id>
