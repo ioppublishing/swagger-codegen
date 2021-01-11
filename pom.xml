@@ -9,10 +9,10 @@
     <artifactId>swagger-codegen-project</artifactId>
     <packaging>pom</packaging>
     <name>swagger-codegen-project</name>
-    <version>3.0.25-SNAPSHOT</version>
+    <version>3.0.25-IOPPUBLISHING-SNAPSHOT</version>
     <url>https://github.com/swagger-api/swagger-codegen</url>
 
-    <!-- IOP Publishing custom build repository of the Swagger codegen generators -->
+    <!-- IOP Publishing custom build repository of the Swagger codegen -->
     <scm>
         <connection>git@github.com:ioppublishing/swagger-codegen.git</connection>
         <developerConnection>git@github.com:ioppublishing/swagger-codegen.git</developerConnection>
@@ -1183,7 +1183,7 @@
         </repository>
     </repositories>
     <properties>
-        <swagger-codegen-generators-version>1.0.25-SNAPSHOT</swagger-codegen-generators-version>
+        <swagger-codegen-generators-version>1.0.25-IOPPUBLISHING-SNAPSHOT</swagger-codegen-generators-version>
         <swagger-core-version>2.1.4</swagger-core-version>
         <swagger-core-version-v1>1.6.2</swagger-core-version-v1>
         <swagger-parser-version>2.0.23</swagger-parser-version>
